@@ -1,0 +1,14 @@
+<form #userlogin= 'ngForm' (ngSubmit)= 'submit(userlogin.value)'>
+    <input type="number" name = "num2" placeholder="num1" ngModel>
+
+<br>
+<input type="number" name = "num1" placeholder="num2" ngModel>
+<input type="submit" value= "submit">
+</form>
+<h1 style="border: red 2px solid">The Multiplicatoin of these numbers : {{d}}</h1>
+
+<!-- <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>First Name: <input type="text" formControlName="firstName"></label>
+    <label>Last Name: <input type="text" formControlName="lastName"></label>
+    <input type="submit" value="submit">
+</form> -->

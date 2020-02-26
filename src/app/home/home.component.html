@@ -1,0 +1,18 @@
+<table  border="2" *ngIf="extract" style="background-color: orangered;" align="center">
+    <tr>
+        <td> ID</td>
+        <td> Email</td>
+        <td> First Name</td>
+        <td> Last Name</td>
+        <td> Avatar</td>
+
+    </tr>
+    <tr *ngFor="let e of extract.data">
+        
+       <td>{{e.id}}</td>
+        <td>{{e.email}}</td>
+        <td>{{e.first_name}}</td>
+        <td>{{e.last_name}}</td>
+        <td><img src="{{e.avatar}}"></td>
+    </tr>
+</table>
